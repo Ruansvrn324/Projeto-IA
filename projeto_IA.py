@@ -58,9 +58,13 @@ rmse = np.sqrt(np.sum((y-y_pred)**2)/n)
 print("RMSE com intercepto 0:")
 print(rmse)
 
-fig = px.scatter(x=x1, y=y, trendline="ols", labels={'x': 'Idade', 'y': 'Arsênio nas Unhas'},title="Relação entre Idade e Arsênio nas Unhas")
-#fig = px.scatter(x=x2, y=y, trendline="ols", labels={'x': 'Uso_Beber', 'y': 'Arsênio nas Unhas'},title="Relação entre Uso para Beber e Arsênio nas Unhas")
-#fig = px.scatter(x=x3, y=y, trendline="ols", labels={'x': 'Uso_Cozinhar', 'y': 'Arsênio nas Unhas'},title="Relação entre Uso para Cozinhar e Arsênio nas Unhas")
-#fig = px.scatter(x=x4, y=y, trendline="ols", labels={'x': 'Arsenio_Agua', 'y': 'Arsênio nas Unhas'},title="Relação entre Arsenio na Água e Arsênio nas Unhas")
+fig1 = px.scatter(x=x1, y=y, trendline="ols", labels={'x': 'Idade', 'y': 'Arsênio nas Unhas'},title="Relação entre Idade e Arsênio nas Unhas")
+fig2 = px.scatter(x=x2, y=y, trendline="ols", labels={'x': 'Uso_Beber', 'y': 'Arsênio nas Unhas'},title="Relação entre Uso para Beber e Arsênio nas Unhas")
+fig3 = px.scatter(x=x3, y=y, trendline="ols", labels={'x': 'Uso_Cozinhar', 'y': 'Arsênio nas Unhas'},title="Relação entre Uso para Cozinhar e Arsênio nas Unhas")
+fig4 = px.scatter(x=x4, y=y, trendline="ols", labels={'x': 'Arsenio_Agua', 'y': 'Arsênio nas Unhas'},title="Relação entre Arsenio na Água e Arsênio nas Unhas")
 
-#fig.show()
+
+fig1.show()
+fig2.show()
+fig3.show()
+fig4.show()
